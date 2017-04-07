@@ -1,0 +1,8 @@
+---
+- hosts: zabbix
+  tasks:
+  - name: configure zabbix repo
+    yum_repository:
+      name: zabbix
+      description: zabbix 3.2 repo
+      baseurl: http://repo.zabbix.com/zabbix/3.2/rhel/7/x86_64/
